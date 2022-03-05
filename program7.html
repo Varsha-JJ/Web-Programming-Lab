@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration</title>
+	<script type="text/javascript">
+	function validation(inputText)
+	{
+		if(document.getElementById("t1").value == "")
+			alert("Enter your name");
+		else if(document.getElementById("t2").value == "")
+			alert("Enter a password");
+		else if(document.getElementById("t2").value != document.getElementById("t3").value)
+			alert("Enter correct password");
+		else if(document.getElementById("t4").value == "")
+			alert("Enter your e-mail");
+		else if(document.getElementById("t5").value == "")
+			alert("Enter your address");
+		else
+			alert("Successfully submitted");
+	}
+	</script>	
+</head>
+<body>
+<table border = "0">
+	<tr>
+		<td>
+			<h1>Registeration form</h1>
+			<form name="form1">
+				Enter your name: <input type="text" id="t1"><br><br>
+				Enter password: <input type="text" id="t2"><br><br>
+				Enter confirm password: <input type="password" id="t3"><br><br>
+				Enter your email: <input type="text" id="t4"><br><br>
+				Enter your address: <textarea rows="2" cols="10" id="t5"></textarea><br><br>
+				<input type="button" value="Submit" onclick="validation(document.form.t5.value)">
+            </form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+
+

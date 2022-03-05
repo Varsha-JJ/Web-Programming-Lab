@@ -1,0 +1,18 @@
+body{
+	background-color:#e6ffff;
+	font-style: italic;
+	font-size: 20x
+}
+#a{
+	color: #9933ff;
+	font-style: italic;
+	font-weight: bold
+}
+#p{
+	color: #9933ff;
+	font-style: italic;
+	font-weight: bold
+}
+.main{
+	color: #001a00;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event handling</title>
+</head>
+<body>
+	<div class="a" id="a">
+		<img src="a.jpg" id="image"><br><br>
+		<h1 id="text1">Sky</h1>
+        <h1 id="text2">Mountain</h1>
+</div>
+<script type="text/javascript">
+	document.getElementById("a").addEventListener("mouseover",over);
+	document.getElementById("a").addEventListener("mouseout",out);
+	function over()
+	{
+		document.getElementById('image').src = "mountain.jpg";
+		document.getElementById('text1').style.display="none";
+		document.getElementById('text2').style.display="block";
+	}
+	function out()
+	{
+		document.getElementById('image').src = "sky1.jpg";
+		document.getElementById('text1').style.display="block";
+		document.getElementById('text2').style.display="none";
+	}
+</script>
+</body>
+</html>
+
+
+
